@@ -1,0 +1,13 @@
+:root { --bg:#f6f8f6; --fg:#14201a; --card:#fff; --accent:#0f7a3d; --line:#d8e0da; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0e1511; --fg:#e8f0ea; --card:#16211a; --line:#26362c; } }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--fg); }
+nav { display:flex; flex-wrap:wrap; gap:1rem; padding:1rem 1.5rem; background:var(--accent); }
+nav a { color:#fff; text-decoration:none; font-weight:600; }
+main { max-width:860px; margin:0 auto; padding:1.5rem; }
+table { width:100%; border-collapse:collapse; background:var(--card); }
+th, td { padding:.5rem .6rem; border-bottom:1px solid var(--line); text-align:left; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:1rem; margin-bottom:1rem; }
+input, select, button { padding:.45rem .6rem; margin:.15rem; border:1px solid var(--line); border-radius:6px; background:var(--card); color:var(--fg); }
+button { background:var(--accent); color:#fff; cursor:pointer; border:0; }
+.badge { font-size:.75rem; background:var(--accent); color:#fff; padding:.1rem .5rem; border-radius:99px; }
